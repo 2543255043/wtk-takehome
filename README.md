@@ -53,13 +53,18 @@ H2 控制台: `http://localhost:8080/h2-console`（JDBC URL: `jdbc:h2:mem:takeho
 ## 提交时请在这里补充
 
 ### 如何启动
-
-
+IDEA 直接启动
+1.将项目导入 IDEA，等待 Maven 自动下载依赖；
+2.找到启动类 com.wtk.takehome.TakehomeApplication.java；
+3.右键 → Run 'TakehomeApplication'，控制台输出 Started TakehomeApplication in X seconds 即启动成功。
 ### AI 部分的设计思路
+1.必须支持 Mock 模式（无 API Key 也能运行）；
+2.可无缝切换到真实 AI 接口；
+3.摘要逻辑贴合业务场景（酒店评论）；
 
 
 ### 如果有更多时间会怎么改进
-
+增加摘要风格与多语言支持，支持按维度筛选总结；加入评论与 AI 摘要缓存，异步调用提升接口响应；抽象 AI 服务接口，支持动态切换厂商并优化提示词；完善异常处理与统一返回格式。同时接入日志监控，补充单元测试与接口文档，提升系统稳定性与可维护性，让摘要更精准、接口更健壮
 
 ---
 
