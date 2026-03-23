@@ -16,3 +16,11 @@ spring:
   sql:
     init:
       mode: always
+
+
+# AI配置
+ai:
+  mock:
+    enabled: true # 默认为true，启用Mock模式
+  api:
+    key: "" # 留空则强制使用Mock，填写真实Key后可切换到真实AI
